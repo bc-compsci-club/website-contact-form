@@ -33,7 +33,7 @@ app.post('/api/email', (req, res, next) => {
     const msg = {
         to: 'bc.cis.club@gmail.com',
         from: "bccompsciclub@no-reply.company",
-        subject: 'Website Contact Form',
+        subject: req.body.name + 'asked a question in Contact Form',
         text: req.body.name + "\n \n" + req.body.email + "\n \n" + req.body.message
     }
 
