@@ -31,9 +31,9 @@ app.post('/api/email', (req, res, next) => {
 
     sendGrid.setApiKey(process.env.SENDGRID_API_KEY);
     const msg = {
-        to: 'klimenkoff9@gmail.com',
+        to: 'bc.cis.club@gmail.com',
         from: "bccompsciclub@no-reply.company",
-        subject: 'Website Contact',
+        subject: 'Website Contact Form',
         text: req.body.name + "\n \n" + req.body.email + "\n \n" + req.body.message
     }
 
