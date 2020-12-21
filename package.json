@@ -4,14 +4,12 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "dependencies": {
     "@sendgrid/mail": "^7.2.3",
-    "body-parse": "^0.1.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "nodemon": "^2.0.4"
